@@ -7,6 +7,7 @@ public class main{
 
         int nextID = 0;
         boolean run = true;
+        
         while (run == true) {
             System.out.println("===== Inventory System =====");
             System.out.println("1. Add an Item");
