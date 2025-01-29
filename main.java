@@ -6,15 +6,16 @@ public class main{
         invetory track = new invetory();
 
         int nextID = 0;
-
-        while (true) {
+        boolean run = true;
+        while (run == true) {
             System.out.println("===== Inventory System =====");
             System.out.println("1. Add an Item");
             System.out.println("2. View Inventory");
             System.out.println("3. Update an Item");
-            System.out.println("4. Delete an Item");
-            System.out.println("5. Search for an Item");
-            System.out.println("6. Exit");
+            System.out.println("4. Update a Price");
+            System.out.println("5. Delete an Item");
+            System.out.println("6. Search for an Item");
+            System.out.println("7. Exit");
             System.out.print("Enter your choice: ");
             
             int choice = scanner.nextInt();
@@ -41,16 +42,19 @@ public class main{
                     track.viewItems();
                     break;
                 case 3:
-                    
+                    track.upDateItem();                
                     break;
                 case 4:
-                    
+                    track.upDatePrice();
                     break;
                 case 5:
-                    
+                    track.deleteItem();
                     break;
                 case 6:
-                    
+                    track.searchItem();
+                    break;
+                case 7:
+                    run = false;
                     break;
             
                 default:
@@ -59,12 +63,3 @@ public class main{
         }   
     }
 }
-
-
-
-
-
-
-
-
-
